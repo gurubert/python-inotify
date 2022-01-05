@@ -23,7 +23,7 @@ for path in paths:
 # If we have nothing to watch, don't go into the read loop, or we'll
 # sit there forever.
 
-if not len(w):
+if not w.num_watches:
     sys.exit(1)
 
 try:
