@@ -26,7 +26,7 @@ inotify.watcher package.
 
 __author__ = "Jan Kanis <jan.code@jankanis.nl>"
 
-from ._inotify import *
+from inotify._inotify import *
 
 procfs_path = '/proc/sys/fs/inotify'
 

@@ -39,7 +39,10 @@ allows you to use a blocking `Watcher.read()` call.
 
 You can find pyinotify at http://pyinotify.sourceforge.net/
 
+Build
+-----
 
+`python -m build`
 
 Notice of copyright and license
 -------------------------------

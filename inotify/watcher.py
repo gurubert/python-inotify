@@ -102,7 +102,7 @@ _event_props = {
     'isdir': 'Event occurred on a directory',
     }
 
-for k, v in _event_props.iteritems():
+for k, v in _event_props.items():
     mask = getattr(inotify, 'IN_' + k.upper())
     def getter(self, mask=mask):
         return self.mask & mask
@@ -221,7 +221,7 @@ class Watcher(object):
         '''Yield a (path, watch descriptor, event mask) tuple for each
         entry being watched.'''
 
-        for path, (wd, mask) in self._paths.iteritems():
+        for path, (wd, mask) in self._paths.items():
             yield path, wd, mask
 
     def __del__(self):
